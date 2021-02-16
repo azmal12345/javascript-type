@@ -1,0 +1,47 @@
+let phone = prompt("Enter Phone Brand");
+
+let creatDiv = document.createElement("div");
+
+document.querySelector("body").appendChild(creatDiv);
+
+switch(phone){
+    case "Redmi":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Red Mi</h1>
+    <img style="width:100%; height:100%;" src="https://i01.appmifile.com/webfile/globalimg/in/cms/52C69665-3527-E4CA-5B87-1665681ABE95.jpg"/>`;
+        break;
+    case "Samsung":
+    creatDiv.innerHTML = `
+    <h1 style="text-align:center">Samsung</h1>
+    <img style="width:100%; height:100%" src="https://www.gizmochina.com/wp-content/uploads/2019/06/Galaxy-A60-featured-546x546.jpg"/>`;
+        break;
+    case "Vivo":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Vivo</h1>
+    <img style="width:100%; height:100%" src="https://www.businessinsider.in/photo/73191839/best-vivo-smartphones-under-20000-in-india.jpg?imgsize=200540" />`;
+        break;
+    case "Oppo":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Oppo</h1>
+    <img style="width:100%; height:100%;" src="https://images-na.ssl-images-amazon.com/images/I/51dcbt2%2B-JL._SL1000_.jpg" />`;
+        break;
+    case "Apple":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Apple</h1>
+    <img style="width:100%; height:100%;" src="https://cdn.homeshopping.pk/product_images/v/194/iphone-x-ultra-hybrid-red__27474.1525693091__12921_zoom.jpg" />`;
+        break;
+    case "Nokia":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Nokia</h1>
+    <img style="width:100%; height:100%;" src="https://images.mobilefun.co.uk/graphics/450pixelp/46027.jpg" />`;
+        break;
+    case "Lg":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Lg</h1>
+    <img style="width:100%; height:100%;" src="https://priceinsouthafrica.com/wp-content/uploads/2020/03/LG-W30-Pro-Price-in-South-Africa.jpg" />`;
+        break;
+    case "Lenovo":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Lenovo</h1>
+    <img style="width:100%; height:100%;" src="https://www.luluhypermarket.com/medias/1639018-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNDY0NDR8aW1hZ2UvanBlZ3xoYmYvaDE2Lzk3MDM4ODY4ODA3OTgvMTYzOTAxOC0wMS5qcGdfMTIwMFd4MTIwMEh8MGFjNjE4NTM2ZDVmMGUzNzMwNDc3OTg3OTQyMzU1ZTVlMDZjNTk4OGU2MTA2MDYyNjBhM2RiNDQ1OGZlY2ExMA" />`;
+        break;
+    case "Sony":
+    creatDiv.innerHTML = `<h1 style="text-align:center">Sony</h1>
+    <img style="width:100%; height:100%;" src="https://static.bhphoto.com/images/images500x500/1409850308_1079654.jpg" />`;
+        break;
+    default:
+    creatDiv.innerHTML = `<h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Sorry <span>😲🤔😕☹️😭</span></h1>`;
+}
